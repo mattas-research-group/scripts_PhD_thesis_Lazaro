@@ -1,0 +1,11 @@
+adenine_ac
+guanine_ac
+cytosine_ac
+thymine_ac
+uracil_ac
+BA_cbond_ac
+BA_nbond_ac
+CA_ac
+TARC_cbond_ac
+TARC_nbond_ac
+melamine_ac

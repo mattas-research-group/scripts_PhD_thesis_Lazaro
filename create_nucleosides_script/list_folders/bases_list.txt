@@ -1,0 +1,11 @@
+adenine
+guanine
+cytosine
+thymine
+uracil
+BA_cbond
+BA_nbond
+CA
+TARC_cbond
+TARC_nbond
+melamine

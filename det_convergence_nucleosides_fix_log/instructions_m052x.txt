@@ -1,0 +1,4 @@
+%nprocshared=16
+%mem=16GB
+%chk=2deoxyribo_beta_vacuum_cell21.chk
+# opt=readfc geom=allcheck guess=read int=ultrafine freq m052x/6-311++g(d,p) scrf=(solvent=water) scf=maxcycle=1600

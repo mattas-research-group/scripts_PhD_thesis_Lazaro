@@ -1,0 +1,26 @@
+# Assign variable to this file 
+line=`cat line_maximumforce_$n.txt`
+total_lines=$(($line+6))
+
+sed -n ''$total_lines'p' $n.log > convergence_$n.log
+convergence=`cat convergence_$n.txt`
+
+if [ $convergence = "-- Stationary point found." ]; 
+then
+echo "cell "$n" converges"
+else
+# Convert log file to gjf
+obabel $n.log -O "$n"_nuevo.gjf
+
+# Delete first two lines of the gjf
+sed -i '1,2d' "$n"_nuevo.gjf
+
+# Paste instructions for b3lyp
+cat instructions_b3lyp.txt "$n"_nuevo.gjf > "$n"_2opt.gjf
+# Replace name chk by name of cell
+sed -i 's/%chk=2deoxyribo_beta_vacuum_cell21.chk/%chk='$n'.chk/g' "$n"_2opt.gjf
+
+# Print this cell in new list
+echo "$n"_2opt.gjf >> list_new_b3lyp.txt
+fi
+

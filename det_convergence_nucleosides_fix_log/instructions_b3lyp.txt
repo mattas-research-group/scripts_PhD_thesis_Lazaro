@@ -1,0 +1,4 @@
+%nprocshared=16
+%mem=16GB
+%chk=2deoxyribo_beta_vacuum_cell21.chk
+# opt=(readfc,modredundant) geom=allcheck guess=read int=ultrafine b3lyp/6-31g(d,p) scf=maxcycle=1600

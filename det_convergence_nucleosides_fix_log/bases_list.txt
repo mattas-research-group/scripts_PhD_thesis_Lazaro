@@ -1,0 +1,9 @@
+adenine
+guanine
+cytosine
+thymine
+uracil
+barbituric_acid
+cyanuric_acid
+TARC
+melamine
