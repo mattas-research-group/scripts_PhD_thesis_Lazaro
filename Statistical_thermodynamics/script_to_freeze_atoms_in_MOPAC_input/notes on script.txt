@@ -1,0 +1,3 @@
+The input file most be as prueba.mop
+The numbers should be modified depending on the case.
+36 is the interval in between lines from cell to cell, must be modified

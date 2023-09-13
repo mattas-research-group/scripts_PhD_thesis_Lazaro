@@ -1,0 +1,15 @@
+#!/bin/bash
+# i = num_lines * num_cell
+i=$((36*5))
+# n = (lineas que vas a modificar)
+n=(8 10 11 26 27)
+cp prueba.mop temp.mop
+for a in ${n[@]} 
+do
+for filas in $(seq $a 36 $i); do sed "${filas} s|.|0|15" temp.mop | sed "${filas} s|.|0|28" | sed "${filas} s|.|0|41" > temp2.mop ;
+cp temp2.mop temp.mop
+done
+done
+cp temp2.mop solvated.mop
+rm temp2.mop temp.mop
+

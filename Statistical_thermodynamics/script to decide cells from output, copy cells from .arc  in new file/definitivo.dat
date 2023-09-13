@@ -1,0 +1,12 @@
+#!/bin/bash
+cat list.dat | while read n; do 
+awk "/CELL:[ ]*$n$/ {print NR}" solvated.arc >> n_lines.dat
+done 
+while read m; do 
+h=$(($m-2))
+echo $h >> lineas.dat
+i=$(($h+35))
+sed -n "$h,$i p"  solvated.arc >> solvated.mop
+done <n_lines.dat
+sed -i 's/pm7 1scf int/pm7 gnorm=1.0 ef let xyz/g' solvated.mop
+rm n_lineas.dat lineas.dat

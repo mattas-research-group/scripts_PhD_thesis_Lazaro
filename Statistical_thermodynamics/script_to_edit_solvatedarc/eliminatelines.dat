@@ -1,0 +1,6 @@
+#!/bin/bash
+sed -e '/SUMMARY/,/FINAL/d' solvated.arc > solvated2.mop
+sed -i 's/pm7 gnorm=1.0 ef let xyz/pm7 1scf int/g' solvated2.mop 
+dos2unix solvated2.mop
+grep -v "^$" solvated2.mop > solvated.mop
+rm solvated2.mop solvated.arc

@@ -1,0 +1,12 @@
+This script choose the cells from the output.q3 that add 80% or more of the contribution to the partition function 
+and copy their coordinates in a new solvated.mop to be reoptimized.  
+
+
+linessss3.txt says the amount of lines for each cell
+
+temp4.dat: cells to be selected
+
+list.dat: temp4 ordered in descending order
+
+porcientos_round.dat: accumulative %
+

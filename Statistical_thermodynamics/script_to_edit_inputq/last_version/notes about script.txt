@@ -1,0 +1,3 @@
+Se debe copiar en mismo directorio del script el fichero:
+solvated.arc
+input.q (este es el que sera arreglado)

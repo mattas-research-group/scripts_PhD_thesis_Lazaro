@@ -1,0 +1,1 @@
+this script will edit solvated.arc in order to convert it to solvated.mop to optimize and change cartesian coordinates to internal coordinates
