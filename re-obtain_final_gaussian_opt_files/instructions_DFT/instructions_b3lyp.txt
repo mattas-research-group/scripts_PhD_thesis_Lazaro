@@ -1,0 +1,5 @@
+%lindaworkers=n1,n2,n3
+%nprocshared=64
+%mem=160GB
+%chk=2deoxyribo_beta_vacuum_cell21.chk
+# opt=modredundant b3lyp/6-31g(d,p) scf=maxcycle=1600
