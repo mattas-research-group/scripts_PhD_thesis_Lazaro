@@ -1,0 +1,6 @@
+# Order for running scripts
+1) Copy files
+2) Condensation reaction
+3) Pseudorotation equil  
+4) RUs conformation
+5) Sugar puckering
